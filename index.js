@@ -7,8 +7,8 @@ const _ = require('lodash');
 const ruleName = 'plugin/property-groups-structure';
 
 const messages = stylelint.utils.ruleMessages(ruleName, {
-	expected: (first, second) => `Expected an empty line between property "${first}" and property "${second}"`,
-	rejected: (first, second) => `Unexpected empty line between property "${first} and property "${second}"`
+	expected: (property) => `Expected an empty line before property "${property}"`,
+	rejected: (property) => `Unexpected an empty line before property "${property}"`
 });
 
 function rule(expectation, options) {
@@ -127,12 +127,12 @@ function rule(expectation, options) {
 
 					if (!hasEmptyLineBefore(secondPropData.node) && emptyLineBefore === 'always') {
 						complain({
-							message: messages.expected(secondPropData.name, firstPropData.name),
+							message: messages.expected(secondPropData.name),
 							node: secondPropData.node,
 						});
 					} else if (hasEmptyLineBefore(secondPropData.node) && emptyLineBefore === 'never') {
 						complain({
-							message: messages.rejected(secondPropData.name, firstPropData.name),
+							message: messages.rejected(secondPropData.name),
 							node: secondPropData.node,
 						});
 					}

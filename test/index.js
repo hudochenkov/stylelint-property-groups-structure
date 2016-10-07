@@ -185,6 +185,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('position'),
 		},
 		{
 			code: `
@@ -196,6 +197,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('border-bottom'),
 		},
 		{
 			code: `
@@ -207,6 +209,7 @@ testRule(propertyGroupStructure.rule, {
 					border-bottom: 1px solid red;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('font-style'),
 		},
 		{
 			code: `
@@ -217,6 +220,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('position'),
 		},
 		{
 			code: `
@@ -225,6 +229,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('font-style'),
 		},
 		{
 			code: `
@@ -233,6 +238,7 @@ testRule(propertyGroupStructure.rule, {
 					border-bottom: 1px solid red;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('border-bottom'),
 		},
 		{
 			code: `
@@ -241,6 +247,7 @@ testRule(propertyGroupStructure.rule, {
 					border-bottom: 1px solid red;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('border-bottom'),
 		},
 		{
 			code: `
@@ -249,6 +256,7 @@ testRule(propertyGroupStructure.rule, {
 					position: absolute;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('position'),
 		},
 		{
 			code: `
@@ -258,6 +266,7 @@ testRule(propertyGroupStructure.rule, {
 					position: absolute;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('position'),
 		},
 	],
 });
@@ -432,6 +441,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('border-bottom'),
 		},
 		{
 			code: `
@@ -443,6 +453,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 		{
 			code: `
@@ -454,6 +465,7 @@ testRule(propertyGroupStructure.rule, {
 					border-bottom: 1px solid red;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 		{
 			code: `
@@ -464,6 +476,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('font-style'),
 		},
 		{
 			code: `
@@ -473,6 +486,7 @@ testRule(propertyGroupStructure.rule, {
 					font-style: italic;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('font-style'),
 		},
 		{
 			code: `
@@ -482,6 +496,7 @@ testRule(propertyGroupStructure.rule, {
 					border-bottom: 1px solid red;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('border-bottom'),
 		},
 		{
 			code: `
@@ -491,6 +506,7 @@ testRule(propertyGroupStructure.rule, {
 					border-bottom: 1px solid red;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('border-bottom'),
 		},
 		{
 			code: `
@@ -500,6 +516,7 @@ testRule(propertyGroupStructure.rule, {
 					position: absolute;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 		{
 			code: `
@@ -510,6 +527,7 @@ testRule(propertyGroupStructure.rule, {
 					position: absolute;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 	],
 });
@@ -689,6 +707,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 		{
 			code: `
@@ -701,6 +720,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 		{
 			code: `
@@ -713,6 +733,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 		{
 			code: `
@@ -722,6 +743,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 		{
 			code: `
@@ -730,6 +752,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 		{
 			code: `
@@ -739,6 +762,7 @@ testRule(propertyGroupStructure.rule, {
 					position: absolute;
 				}
 			`,
+			message: propertyGroupStructure.messages.rejected('position'),
 		},
 		{
 			code: `
@@ -747,6 +771,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 		{
 			code: `
@@ -755,6 +780,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 	],
 });
@@ -858,6 +884,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 		{
 			code: `
@@ -866,6 +893,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 		{
 			code: `
@@ -875,6 +903,7 @@ testRule(propertyGroupStructure.rule, {
 					display: none;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('display'),
 		},
 	],
 });
@@ -919,6 +948,7 @@ testRule(propertyGroupStructure.rule, {
 					border-top: absolute;
 				}
 			`,
+			message: propertyGroupStructure.messages.expected('border-top'),
 		},
 	],
 });

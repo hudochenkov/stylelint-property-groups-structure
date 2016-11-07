@@ -1,7 +1,7 @@
 {
   "name": "stylelint-property-groups-structure",
   "version": "0.1.1",
-  "description": "Stylelint plugin which requires or disallow an empty line before property groups.",
+  "description": "DEPRECATED! Stylelint plugin which requires or disallow an empty line before property groups.",
   "keywords": [
     "stylelint-plugin",
     "stylelint",

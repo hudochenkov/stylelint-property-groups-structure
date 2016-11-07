@@ -1,5 +1,7 @@
 # stylelint-property-groups-structure [![Build Status][ci-img]][ci]
 
+**DEPRECATED! The plugin was deprecated in favor of [`stylelint-order`](https://github.com/hudochenkov/stylelint-order).**
+
 [Stylelint] plugin which requires or disallow an empty line before property groups.
 
 ## Installation
